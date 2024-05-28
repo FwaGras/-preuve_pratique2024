@@ -15,6 +15,7 @@ def tri_selection(tab:list):
             if tab[i] < tab[imin]:
                 imin = i
         echange(tab, k, imin)
+    return tab
 
 assert tri_selection([41, 55, 21, 18, 12, 6, 25]) != [6, 12, 18, 21, 25, 41, 55], "erreur"
 
